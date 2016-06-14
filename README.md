@@ -5,11 +5,29 @@ JsonUtil
 * http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
 * http://wiki.fasterxml.com/JacksonInFiveMinutes
 ```xml
-<!-- http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
-<dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-core</artifactId>
-    <version>2.7.4</version>
-</dependency>
+  <properties>
+	<!-- Use the latest version whenever possible. -->
+	<jackson.version>2.7.0</jackson.version>
+  </properties>
+
+ <dependencies>
+        <dependency>
+    		<groupId>com.fasterxml.jackson.core</groupId>
+    		<artifactId>jackson-annotations</artifactId>
+    		<version>${jackson.version}</version>
+    	</dependency>
+    	
+    	<dependency>
+    	    <groupId>com.fasterxml.jackson.core</groupId>
+    	    <artifactId>jackson-databind</artifactId>
+    	    <version>${jackson.version}</version>
+      	</dependency>
+        
+    	<dependency>
+    		<groupId>com.fasterxml.jackson.core</groupId>
+    	    <artifactId>jackson-core</artifactId>
+    	    <version>${jackson.version}</version>
+    	</dependency>
+ </dependencies>
 ```
 * https://github.com/FasterXML/jackson-databind
