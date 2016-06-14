@@ -2,6 +2,7 @@
 JsonUtil
 -----------
 * mvn archetype:generate -DgroupId=com.mk -DartifactId=JsonUtil -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+* https://github.com/FasterXML/jackson-databind
 * http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
 * http://wiki.fasterxml.com/JacksonInFiveMinutes
 ```xml
@@ -30,4 +31,4 @@ JsonUtil
     	</dependency>
  </dependencies>
 ```
-* https://github.com/FasterXML/jackson-databind
+
